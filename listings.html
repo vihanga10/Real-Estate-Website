@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Property Listings | RealEstateLK</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="logo">RealEstate<span>LK</span></div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="#">Buy</a>
+      <a href="#">Rent</a>
+      <a href="#">Land</a>
+    </nav>
+    <button class="btn-primary">Post Property</button>
+  </header>
+
+  <!-- PAGE HEADER -->
+  <section class="page-header">
+    <h1>Property Listings</h1>
+    <p>Browse properties across Sri Lanka</p>
+  </section>
+
+  <!-- FILTER + LISTINGS -->
+  <section class="listing-section">
+
+    <!-- FILTERS -->
+    <aside class="filters">
+      <h3>Filter</h3>
+
+      <select id="locationFilter">
+        <option value="">Location</option>
+        <option value="Colombo">Colombo</option>
+        <option value="Kandy">Kandy</option>
+        <option value="Galle">Galle</option>
+      </select>
+
+      <select id="typeFilter">
+        <option value="">Property Type</option>
+        <option value="House">House</option>
+        <option value="Apartment">Apartment</option>
+        <option value="Land">Land</option>
+      </select>
+
+      <button class="btn-primary" onclick="filterProperties()">Apply Filters</button>
+    </aside>
+
+    <!-- PROPERTY GRID -->
+    <div class="property-grid" id="propertyGrid">
+      <!-- JS will load cards here -->
+    </div>
+
+  </section>
+
+  <footer>
+    <p>© 2025 RealEstateLK. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
